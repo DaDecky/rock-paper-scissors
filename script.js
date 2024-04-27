@@ -100,28 +100,6 @@ const startNewGame = () => {
   button.addEventListener("click", () => location.reload());
 };
 
-// const playGame = () => {
-//   for (let i = 0; i < 5; i++) {
-//     playRound(getHumanChoice(), getComputerChoice());
-//   }
-//   if (humanScore > computerScore) {
-//     console.log("Your Score:", humanScore);
-//     console.log("Computer Score:", computerScore);
-//     console.log("You Win!");
-//   } else if (humanScore < computerScore) {
-//     console.log("Your Score:", humanScore);
-//     console.log("Computer Score:", computerScore);
-//     console.log("You Lose!");
-//   } else {
-//     console.log("Your Score:", humanScore);
-//     console.log("Computer Score:", computerScore);
-//     console.log("Tie!");
-//   }
-//   // Resetting Score
-//   humanScore = 0;
-//   computerScore = 0;
-// };
-// playGame();
 const rock = document.querySelector("#rock");
 rock.addEventListener("click", () => {
   playRound("rock", getComputerChoice());
